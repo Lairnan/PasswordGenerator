@@ -1,0 +1,7 @@
+D:\Aleksey\Desktop\Lesson\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+D:\Aleksey\Desktop\Lesson\ConsoleApplication2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+D:\Aleksey\Desktop\Lesson\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csproj.AssemblyReference.cache
+D:\Aleksey\Desktop\Lesson\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csproj.SuggestedBindingRedirects.cache
+D:\Aleksey\Desktop\Lesson\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csproj.CoreCompileInputs.cache
+D:\Aleksey\Desktop\Lesson\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+D:\Aleksey\Desktop\Lesson\ConsoleApplication2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
