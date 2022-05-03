@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
 namespace ConsoleApplication2
 {
@@ -12,20 +15,26 @@ namespace ConsoleApplication2
                 Console.Write("Введите количество паролей: ");
                 var count = int.Parse(Console.ReadLine() ?? string.Empty);
                 var password = new PasswordGenerator();
-                for (var i = 0; i < count; i++)
+                using (var file = new StreamWriter("PassGen.txt", true, Encoding.UTF8))
                 {
-                    var length = Random.Next(5, 25);
-                    Console.WriteLine(password.Password(length));
+                    for (var i = 0; i < count; i++)
+                    {
+                        var length = Random.Next(5, 25);
+                        file.WriteLine($"{i} - {password.Password(length)}");
+                    }
+                    file.WriteLine($"Создано - {DateTime.Now}");
+                    file.WriteLine("------------------------------------------------------------------");
                 }
-
-                Console.WriteLine("Вы вышли из программы.");
             }
             catch (FormatException ex)
             {
-                Console.WriteLine(ex.Message);
+                using (var file = new StreamWriter("Error.txt", true, Encoding.UTF8))
+                {
+                    file.WriteLine(ex.Message);
+                    file.WriteLine(DateTime.Now);
+                    file.WriteLine("------------------------------------------------------------------");
+                }
             }
-
-            Console.ReadKey();
         }
     }
 }
