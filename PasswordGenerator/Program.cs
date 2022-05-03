@@ -20,7 +20,7 @@ namespace ConsoleApplication2
                     for (var i = 0; i < count; i++)
                     {
                         var length = Random.Next(5, 25);
-                        file.WriteLine($"{i} - {password.Password(length)}");
+                        file.WriteLine($"{i+1} - {password.Password(length)}");
                     }
                     file.WriteLine($"Создано - {DateTime.Now}");
                     file.WriteLine("------------------------------------------------------------------");
